@@ -47,6 +47,9 @@ if has("gui_running") || &t_Co == 256
     hi StatusLineNC cterm=reverse ctermfg=236 ctermbg=16 gui=reverse guifg=#303030 guibg=#000000
     hi Visual cterm=reverse ctermfg=250 ctermbg=16 gui=reverse guifg=#bcbcbc guibg=#000000
     hi TermCursor cterm=reverse ctermfg=NONE ctermbg=NONE gui=reverse guifg=NONE guibg=NONE
+    hi SignColumn cterm=NONE ctermfg=245 ctermbg=16 gui=NONE guifg=#8a8a8a guibg=#000000
+    hi CursorLineNr ctermfg=196 ctermbg=16 guifg=#ff0000 guibg=#000000
+    hi LineNr ctermfg=255 ctermbg=16 guifg=#eeeeee guibg=#000000
 else
     hi Normal cterm=NONE ctermfg=Gray ctermbg=Black
     hi Keyword cterm=NONE ctermfg=White ctermbg=Black
@@ -74,6 +77,9 @@ else
     hi StatusLineNC cterm=reverse ctermfg=DarkGray ctermbg=Black
     hi Visual cterm=reverse ctermfg=Gray ctermbg=Black
     hi TermCursor cterm=reverse ctermfg=NONE ctermbg=NONE
+    hi SignColumn cterm=NONE cterm=NONE ctermfg=Gray ctermbg=Black
+    hi CursorLineNr cterm=NONE ctermfg=Red ctermbg=Black
+    hi LineNr  cterm=NONE ctermfg=White ctermbg=Black
 endif
 highlight! link Boolean Normal
 highlight! link Delimiter Normal
